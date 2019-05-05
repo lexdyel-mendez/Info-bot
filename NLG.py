@@ -45,16 +45,23 @@ def makestring(start, dictionary, length):
     return string
 
 def input_check():
-    date = input("What date is the event?")
+    date = input("What date is the event? ")
     print("The event is in "+date)
     date = ' ' + date + ' '
     return date
 
-if __name__ == '__main__':
+def interface(date):
     words = read.read_file()
-    date=input_check()
     startingWords = read.readStarting()
-    rule = make_dictionary(words,1)
+    rule = make_dictionary(words, 1)
     string = makestring(startingWords, rule, 30)
-    string = string.replace(' [date] ' , str(date))
-    print(string)
+    if '[date]' not in string:
+        interface()
+    else:
+        string = string.replace(' [date] ', str(date))
+        print(string)
+
+if __name__ == '__main__':
+    date = input_check()
+
+    interface(date= date)
