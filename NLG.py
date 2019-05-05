@@ -23,11 +23,11 @@ def make_dictionary(words, context):
  
     return dictionary
 
-def makestring(start, rule, length):    
+def makestring(start, dictionary, length):    
     startword = make_dictionary(start, 1)
-    oldwords = random.choice(list(startword.keys())).split(' ') #random starting words
-    print(oldwords)
-    string = ' '.join(oldwords) + ' '
+    reference_words = random.choice(list(startword.keys())).split(' ') #random starting words
+    print(reference_words)
+    string = ' '.join(reference_words) + ' '
  
     for i in range(length):
         try:
