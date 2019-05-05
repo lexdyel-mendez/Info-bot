@@ -1,7 +1,6 @@
 
 import keras
 import random
-import re
 import Read_file as read
 
 
@@ -32,13 +31,13 @@ def makestring(start, rule, length):
  
     for i in range(length):
         try:
-            key = ' '.join(oldwords)
-            newword = random.choice(rule[key])
+            key = ' '.join(reference_words)
+            newword = random.choice(dictionary[key])
             string += newword + ' '
  
-            for word in range(len(oldwords)):
-                oldwords[word] = oldwords[(word + 1) % len(oldwords)]
-            oldwords[-1] = newword
+            for word in range(len(reference_words)):
+                reference_words[word] = reference_words[(word + 1) % len(reference_words)]
+            reference_words[-1] = newword
  
         except KeyError:
             return string
