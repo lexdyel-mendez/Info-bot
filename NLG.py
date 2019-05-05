@@ -10,23 +10,26 @@ def read_file():
     return words
 
 
-def makerule(words, context):
-    '''Make a rule dict for given data.'''
-    rule = {}
-    index = context
+def make_dictionary(words, context):
+    """Creates a dictionary which will store all the words in the dataset and all the perceived next words
+        Parameters: 
+            words: an array of all (non unique) words  in the dataset
+            context: quantity if words that the dictionary uses to create references"""
+    dictionary = {}
+    index = 0
  
     for word in words[index:]:
         key = ' '.join(words[index-context:index])
-        if key in rule:
-            rule[key].append(word)
+        if key in dictionary:
+            dictionary[key].append(word)
         else:
-            rule[key] = [word]
+            dictionary[key] = [word]
+            
         index += 1
  
-    return rule
+    return dictionary
 
 def makestring(rule, length):    
-    '''Use a given rule to make a string.'''
     oldwords = random.choice(list(rule.keys())).split(' ') #random starting words
     string = ' '.join(oldwords) + ' '
  
@@ -48,6 +51,6 @@ def makestring(rule, length):
 
 if __name__ == '__main__':
     words = read_file()
-    rule = makerule(words,1)
+    rule = make_dictionary(words,1)
     string = makestring(rule, 30)
     print(string)
