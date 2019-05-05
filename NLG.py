@@ -2,12 +2,7 @@
 import keras
 import random
 import re
-
-
-def read_file():
-    text=(open("/Users/maria/github/ArtInt/Dataset/Dataset.txt", encoding = "utf-8-sig").read().lower())
-    words = keras.preprocessing.text.text_to_word_sequence(text, filters='!"#$%&()*+,-./:;<=>?@[\\]^_`{|}~\t\n', lower=True, split=' ')
-    return words
+import Read_file as read
 
 
 def makerule(words, context):
@@ -47,7 +42,7 @@ def makestring(rule, length):
 
 
 if __name__ == '__main__':
-    words = read_file()
-    rule = makerule(words,1)
+    words = read.read_file()
+    rule = makerule(words,2)
     string = makestring(rule, 30)
     print(string)
