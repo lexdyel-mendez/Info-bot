@@ -24,8 +24,10 @@ def make_dictionary(words, context):
  
     return dictionary
 
-def makestring(rule, length):    
-    oldwords = random.choice(list(rule.keys())).split(' ') #random starting words
+def makestring(start, rule, length):    
+    startword = make_dictionary(start, 1)
+    oldwords = random.choice(list(startword.keys())).split(' ') #random starting words
+    print(oldwords)
     string = ' '.join(oldwords) + ' '
  
     for i in range(length):
@@ -46,6 +48,7 @@ def makestring(rule, length):
 
 if __name__ == '__main__':
     words = read.read_file()
+    startingWords = read.readStarting()
     rule = make_dictionary(words,1)
-    string = makestring(rule, 30)
+    string = makestring(startingWords, rule, 30)
     print(string)
