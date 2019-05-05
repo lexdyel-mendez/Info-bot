@@ -26,7 +26,6 @@ def make_dictionary(words, context):
 def makestring(start, dictionary, length):
     startword = make_dictionary(start, 1)
     reference_words = random.choice(list(startword.keys())).split(' ') #random starting words
-    print(reference_words)
     string = ' '.join(reference_words) + ' '
 
  
@@ -45,23 +44,23 @@ def makestring(start, dictionary, length):
     return string
 
 def input_check():
-    date = input("What date is the event? ")
-    print("The event is in "+date)
+    date = input("What date is the event?")
+    print("The event is in "+ date)
     date = ' ' + date + ' '
     return date
 
 def interface(date):
+    theDate =  date
     words = read.read_file()
     startingWords = read.readStarting()
     rule = make_dictionary(words, 1)
     string = makestring(startingWords, rule, 30)
     if '[date]' not in string:
-        interface()
+        interface(theDate)
     else:
-        string = string.replace(' [date] ', str(date))
+        string = string.replace(' [date] ', str(date),1)
         print(string)
 
 if __name__ == '__main__':
-    date = input_check()
-
-    interface(date= date)
+    givenDate = input_check()
+    interface(date =givenDate)
