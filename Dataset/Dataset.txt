@@ -148,7 +148,7 @@ PSpice is a program that is used to simulate circuits and different electronic d
 The Python workshop that will take place tomorrow, March 21 at 6:00 p.m., will change to room S-203 (Stefani). Similarly, the Game Board Night will be held in that same room, starting at 7:30 p.m.
 
 
-TODAY we will have our sale of piña colada & mix sandwiches! At the universal time in Stefani's lobby, do not miss separating your combo.
+Today we will have our sale of piña colada & mix sandwiches! At the universal time in Stefani's lobby, do not miss separating your combo.
 
 
 The IEEE Computer Society will be offering a Python Workshop next March 21 during Universal Time, at S-207 (Stefani).

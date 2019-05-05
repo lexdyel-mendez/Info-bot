@@ -2,12 +2,7 @@
 import keras
 import random
 import re
-
-
-def read_file():
-    text=(open("/Users/maria/github/ArtInt/Dataset/Dataset.txt", encoding = "utf-8-sig").read().lower())
-    words = keras.preprocessing.text.text_to_word_sequence(text, filters='!"#$%&()*+,-./:;<=>?@[\\]^_`{|}~\t\n', lower=True, split=' ')
-    return words
+import Read_file as read
 
 
 def make_dictionary(words, context):
