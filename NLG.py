@@ -45,7 +45,7 @@ def makestring(rule, length):
 
 
 if __name__ == '__main__':
-    words = read_file()
+    words = read.read_file()
     rule = make_dictionary(words,1)
     string = makestring(rule, 30)
     print(string)
