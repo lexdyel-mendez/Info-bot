@@ -33,7 +33,7 @@ def makestring(start, dictionary, length):
             key = ' '.join(reference_words)
             newword = random.choice(dictionary[key])
             string += newword + ' '
- 
+            if(newword == '.'): break
             for word in range(len(reference_words)):
                 reference_words[word] = reference_words[(word + 1) % len(reference_words)]
             reference_words[-1] = newword
@@ -52,14 +52,14 @@ def interface(date):
     words = read.read_file()
     startingWords = read.readStarting()
     rule = make_dictionary(words, 1)
-    string = makestring(startingWords, rule, 14)
-    if date.upper() != ' N/A ':                                 #Allows you to input N/A as date to sky it and avoid a status with a date in it.
+    string = makestring(startingWords, rule, 30)
+    if date != ' N/A ':
         if '[date]' not in string:
             interface(date)
         else:
             string = string.replace(' [date] ', str(date))
             print(string)
-    elif date.upper() == " N/A ":
+    elif date == " N/A ":
         if '[date]' in string:
             interface(date)
         else:
