@@ -1,4 +1,3 @@
-import keras
 import random
 import Read_file as read
 
@@ -44,23 +43,29 @@ def makestring(start, dictionary, length):
     return string
 
 def input_check():
-    date = input("What date is the event?")
+    date = input("What date is the event? (N/A if it doesnt apply)")
     print("The event is in "+ date)
     date = ' ' + date + ' '
     return date
 
 def interface(date):
-    theDate =  date
     words = read.read_file()
     startingWords = read.readStarting()
     rule = make_dictionary(words, 1)
-    string = makestring(startingWords, rule, 30)
-    if '[date]' not in string:
-        interface(theDate)
-    else:
-        string = string.replace(' [date] ', str(date))
-        print(string)
+    string = makestring(startingWords, rule, 14)
+    if date != ' N/A ':
+        if '[date]' not in string:
+            interface(date)
+        else:
+            string = string.replace(' [date] ', str(date))
+            print(string)
+    elif date == " N/A ":
+        if '[date]' in string:
+            interface(date)
+        else:
+            print(string)
+
 
 if __name__ == '__main__':
     givenDate = input_check()
-    interface(date =givenDate)
+    interface(givenDate)
