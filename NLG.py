@@ -33,7 +33,7 @@ def makestring(start, dictionary, length):
             key = ' '.join(reference_words)
             newword = random.choice(dictionary[key])
             string += newword + ' '
- 
+            if(newword == '.'): break
             for word in range(len(reference_words)):
                 reference_words[word] = reference_words[(word + 1) % len(reference_words)]
             reference_words[-1] = newword
@@ -42,30 +42,22 @@ def makestring(start, dictionary, length):
             return string
     return string
 
-
-def input_checker(question,valueName):
-    value = input(str(question)+' (N/A if it does not apply)')
-    if value.upper() != 'N/A':
-        print("The "+valueName +" is: "+value)
-    value = ' '+value+' '
-    return value
-
-def input_date():
-    input_checker('Whats the date of the event?', 'date')
-
-def input_eventName():
-    input_checker("Whats's the name of the event?", "event's name")
+def input_check():
+    date = input("What date is the event? (N/A if it doesnt apply)")
+    print("The event is in "+ date)
+    date = ' ' + date + ' '
+    return date
 
 def interface(date):
     words = read.read_file()
     startingWords = read.readStarting()
     rule = make_dictionary(words, 1)
-    string = makestring(startingWords, rule, 10)
+    string = makestring(startingWords, rule, 30)
     if date != ' N/A ':
         if '[date]' not in string:
             interface(date)
         else:
-            string = string.replace(' [date]', str(date))
+            string = string.replace(' [date] ', str(date))
             print(string)
     elif date == " N/A ":
         if '[date]' in string:
@@ -75,5 +67,5 @@ def interface(date):
 
 
 if __name__ == '__main__':
-    givenDate = input_date()
+    givenDate = input_check()
     interface(givenDate)
