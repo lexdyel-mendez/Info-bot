@@ -132,8 +132,7 @@ def interface(date,eventName):
     if date.upper() == 'N/A' and eventName.upper() != 'N/A':
         if '[date]' in string or '[event]' not in string:
             interface(date,eventName)
-        # elif '[event]' not in string:
-        #     interface(date,eventName)
+
         else:
             string = string.replace('[event]', eventName)
             stringToOutput = string
@@ -141,8 +140,7 @@ def interface(date,eventName):
     if date.upper() != 'N/A' and eventName.upper() == 'N/A':
         if '[event]' in string or '[date]' not in string:
             interface(date,eventName)
-        # elif '[date]' not in string:
-        #     interface(date,eventName)
+
         else:
             string = string.replace('[date]', date)
             stringToOutput = string
