@@ -153,41 +153,6 @@ def interface(date,eventName):
             print(string)
 
 
-
-
-    # if eventName.upper() != 'N/A':
-    #     if '[event]' not in string:
-    #         interface(date, eventName)
-    #     if date != 'N/A':
-    #         if '[date]' not in string:
-    #             interface(date)
-    #         else:
-    #             string = string.replace('[date]', str(date))
-    #             stringToOutput = string
-    #             print(string)
-    #     elif date.upper() == "N/A":
-    #         if '[date]' in string:
-    #             interface(date)
-    #         else:
-    #             stringToOutput = string
-    #             print(string)
-    # elif eventName.upper() == 'N/A':
-    #     if date != 'N/A':
-    #         if '[date]' not in string:
-    #             interface(date)
-    #         else:
-    #             string = string.replace('[date]', str(date))
-    #             stringToOutput = string
-    #             print(string)
-    #     elif date.upper() == "N/A":
-    #         if '[date]' in string:
-    #             interface(date)
-    #         else:
-    #             stringToOutput = string
-    #             print(string)
-
-
-
 def label_data(date,eventName,string):
     '''
     Generates a string with the generated data, but labeled with its respective labels.
