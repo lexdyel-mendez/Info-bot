@@ -80,5 +80,53 @@ The date of the event is: April 6
 The name of the event is: conference
 The rate of the event is:4
 The given string is: tomorrow we thank harris corporation sponsored a bachelor’s degree in the ieee and computer society uprm wants to gather with a conference on April 6 the ao drone project and friends . 
-The labeled data is: tomorrow we thank harris corporation sponsored a bachelor’s degree in the ieee and computer society uprm wants to gather with a [eventname] on [date] the ao drone project and friends . 
+The labeled data is: tomorrow we thank harris corporation sponsored a bachelor’s degree in the ieee and computer society uprm wants to gather with a [event] on [date] the ao drone project and friends .
+
+The date of the event is: N/A
+The name of the event is: conference
+The rate of the event is:4
+The given string is: we enthusiastically announce our conference hosted by dr . 
+The labeled data is: we enthusiastically announce our [event] hosted by dr . 
+
+The date of the event is: N/A
+The name of the event is: hackathon
+The rate of the event is:4
+The given string is: this year we had the nominations in nasa's pathways intern will take this semester and icom for these contributions to our monthly hackathon . 
+The labeled data is: this year we had the nominations in nasa's pathways intern will take this semester and icom for these contributions to our monthly [event] . 
+
+The date of the event is: April 26
+The name of the event is: conference
+The rate of the event is:4
+The given string is: today April 26 in our conference and girl scouts to go and prepare for students of the 
+The labeled data is: today [date] in our [event] and girl scouts to go and prepare for students of the 
+
+The date of the event is: N/A
+The name of the event is: movie night
+The rate of the event is:4
+The given string is: tomorrow is awarded such as students in movie night . 
+The labeled data is: tomorrow is awarded such as students in [event] . 
+
+The date of the event is: N/A
+The name of the event is: movie night
+The rate of the event is:3
+The given string is: at uprm chapter invites you can also our movie night . 
+The labeled data is: at uprm chapter invites you can also our [event] . 
+
+The date of the event is: January 5
+The name of the event is: community service 
+The rate of the event is:1
+The given string is: today some of our community service  prior to get distracted come today January 5 . 
+The labeled data is: today some of our [event] prior to get distracted come today [date] . 
+
+The date of the event is: January 5
+The name of the event is: N/A
+The rate of the event is:3
+The given string is: on January 5 is to notify professors explained their abilities and simulations among others to work experience 
+The labeled data is: on [date] is to notify professors explained their abilities and simulations among others to work experience 
+
+The date of the event is: N/A
+The name of the event is: N/A
+The rate of the event is:4
+The given string is: tomorrow is very recognized with the current georgia tech . 
+The labeled data is: tomorrow is very recognized with the current georgia tech . 
 

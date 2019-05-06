@@ -51,7 +51,7 @@ def data_saver(eventDate, eventName, rating, givenString,labeled):
     filepath = open('Saved_data.txt', 'a+')
     filepath.write('The date of the event is: ' + str(eventDate) +
                    '\nThe name of the event is: ' + str(eventName) +
-                   '\nThe rate of the event is:' + str(rating) +
+                   '\nThe rate of the event is: ' + str(rating) +
                    '\nThe given string is: ' + str(givenString) +
                    '\nThe labeled data is: ' + labeled+'\n\n'
                    )
@@ -120,7 +120,7 @@ def interface(date,eventName):
     words = read.read_file()
     startingWords = read.readStarting()
     rule = make_dictionary(words, 1)
-    string = makestring(startingWords, rule, 30)
+    string = makestring(startingWords, rule, 15)
     if date.upper() != 'N/A' and eventName.upper() != 'N/A':
         if all(t in string for t in label):
             string = string.replace('[date]',date)
@@ -173,6 +173,6 @@ if __name__ == '__main__':
     interface(givenDate, eventName)
 
     rate = post_rate()
-    if rate >= 4:
-        labels = label_data(givenDate,eventName,stringToOutput)
-        data_saver(givenDate, eventName, rate, stringToOutput, labels)
+
+    labels = label_data(givenDate,eventName,stringToOutput)
+    data_saver(givenDate, eventName, rate, stringToOutput, labels)
