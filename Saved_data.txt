@@ -58,3 +58,15 @@ The date of the event is: April 26
 The name of the event is: To be implemented
 The given string is: tomorrow is collaborating on April 26 during universal time a christmas dinner for the nanogames team presented at college . 
 
+The date of the event is: April 26
+The name of the event is: To be implemented
+The given string is: today April 26 . 
+
+The date of the event is: N/A
+The name of the event is: To be implemented
+The given string is: today some of the aurora mendez school and prepare for graduation to our ieee will have our crl cleaning day .
+
+The date of the event is: N/A
+The name of the event is: To be implemented
+The given string is: tomorrow is awarded to congratulate icom student .
+
