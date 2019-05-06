@@ -82,7 +82,7 @@ def interface(date):
     words = read.read_file()
     startingWords = read.readStarting()
     rule = make_dictionary(words, 1)
-    string = makestring(startingWords, rule, 15)
+    string = makestring(startingWords, rule, 20)
     if date != 'N/A':
         if '[date]' not in string:
             interface(date)

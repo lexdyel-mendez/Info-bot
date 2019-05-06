@@ -14,3 +14,11 @@ The date of the event is:April 23
 The name of the event is:To be implemented
 The given string is:today April 23 held in different electronic systems .
 
+The date of the event is: N/A
+The name of the event is: To be implemented
+The given string is: today engineering programs at uprm and he will have speakers including naima rodr�guez executive director of 
+
+The date of the event is: N/A
+The name of the event is: To be implemented
+The given string is:  this opportunity available for cahsi hackathon at uprm . 
+
