@@ -70,3 +70,9 @@ The date of the event is: N/A
 The name of the event is: To be implemented
 The given string is: tomorrow is awarded to congratulate icom student .
 
+The date of the event is: April 26
+The name of the event is: To be implemented
+The rate of the event is:4
+The given string is: today April 26 harris award for our advisor counselor dr . 
+The labeled data is: today [date] harris award for our advisor counselor dr . 
+
