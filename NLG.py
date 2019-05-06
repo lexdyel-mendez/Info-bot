@@ -19,7 +19,6 @@ def make_dictionary(words, context):
             dictionary[key] = [word]
             
         index += 1
- 
     return dictionary
 
 def makestring(start, dictionary, length):
@@ -42,6 +41,15 @@ def makestring(start, dictionary, length):
             return string
     return string
 
+def data_saver(eventDate,eventName,givenString):
+    filepath = open('Saved_data.txt','a+')
+    filepath.write('The date of the event is:' + str(eventDate) +
+                    '\nThe name of the event is:' + str(eventName) +
+                   '\nThe given string is:' + str(givenString) + '\n\n'
+    )
+
+
+
 def input_check():
     date = input("What date is the event? (N/A if it doesnt apply)")
     print("The event is in "+ date)
@@ -58,14 +66,18 @@ def interface(date):
             interface(date)
         else:
             string = string.replace(' [date] ', str(date))
-            print(string)
-    elif date == " N/A ":
+            print (string)
+            return  string
+    elif date.upper() == " N/A ":
         if '[date]' in string:
             interface(date)
         else:
-            print(string)
+            print (string)
+            return  string
 
 
 if __name__ == '__main__':
     givenDate = input_check()
-    interface(givenDate)
+    value = interface(givenDate)
+
+    data_saver(givenDate,'To be implemented',value)
