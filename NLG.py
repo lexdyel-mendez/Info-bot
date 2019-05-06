@@ -42,30 +42,38 @@ def makestring(start, dictionary, length):
             return string
     return string
 
-def input_check():
-    date = input("What date is the event? (N/A if it doesnt apply)")
-    print("The event is in "+ date)
-    date = ' ' + date + ' '
-    return date
 
-def interface(date):
+def input_checker(question,valueName):
+    value = input(question+'(N/A if it does not apply)')
+    if value.upper() != 'N/A':
+        print("The "+valueName +" is: " + value)
+    value = ' '+value+' '
+    return value
+
+def input_date():
+    date = input_checker('Whats the date of the event?', 'date')
+    return date
+def input_eventName():
+    input_checker("Whats's the name of the event?", "event's name")
+
+def interface(date,amountofWord):
     words = read.read_file()
     startingWords = read.readStarting()
     rule = make_dictionary(words, 1)
-    string = makestring(startingWords, rule, 30)
+    string = makestring(startingWords, rule, amountofWord)
     if date != ' N/A ':
         if '[date]' not in string:
-            interface(date)
+            interface(date,amountofWord)
         else:
             string = string.replace(' [date] ', str(date))
-            print(string)
-    elif date == " N/A ":
-        if '[date]' in string:
-            interface(date)
+            return string
+    else:
+        if ' [date] ' in string:
+            interface(' N/A ',amountofWord)
         else:
-            print(string)
+            return string
 
 
 if __name__ == '__main__':
-    givenDate = input_check()
-    interface(givenDate)
+    givenDate = input_date()
+    print(interface(givenDate,30))
