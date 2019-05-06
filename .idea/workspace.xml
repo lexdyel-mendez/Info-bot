@@ -2,9 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b1f50e91-07d9-4e21-824a-19b3e67379ee" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/NLG.py" beforeDir="false" afterPath="$PROJECT_DIR$/NLG.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Read_file.py" beforeDir="false" afterPath="$PROJECT_DIR$/Read_file.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -17,8 +15,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/NLG.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="240">
-              <caret line="54" column="47" selection-start-line="54" selection-start-column="47" selection-end-line="54" selection-end-column="47" />
+            <state relative-caret-position="444">
+              <caret line="66" lean-forward="true" selection-start-line="66" selection-end-line="67" />
               <folding>
                 <element signature="e#0#13#0" expanded="true" />
               </folding>
@@ -161,7 +159,7 @@
       <updated>1557016566542</updated>
       <workItem from="1557016568096" duration="334000" />
       <workItem from="1557093343029" duration="6802000" />
-      <workItem from="1557106795598" duration="1420000" />
+      <workItem from="1557106795598" duration="2347000" />
     </task>
     <task id="LOCAL-00001" summary="Added method for input date">
       <created>1557096603747</created>
@@ -191,14 +189,22 @@
       <option name="project" value="LOCAL" />
       <updated>1557099027710</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Made it so that you can input N/A as date to have a post without date.">
+      <created>1557108248328</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1557108248328</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="8556000" />
+    <option name="totallyTimeSpent" value="9483000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1066" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.16364606" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -232,10 +238,11 @@
     <MESSAGE value="Added method of interface so that it forces to use a string with [date]." />
     <MESSAGE value="Fixed the interface recurssion" />
     <MESSAGE value="removed the limit of date in the replace" />
-    <option name="LAST_COMMIT_MESSAGE" value="removed the limit of date in the replace" />
+    <MESSAGE value="Made it so that you can input N/A as date to have a post without date." />
+    <option name="LAST_COMMIT_MESSAGE" value="Made it so that you can input N/A as date to have a post without date." />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/AI_Project$NLG.coverage" NAME="NLG Coverage Results" MODIFIED="1557108174850" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/AI_Project$NLG.coverage" NAME="NLG Coverage Results" MODIFIED="1557108434928" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/KerasCode.ipynb">
@@ -260,8 +267,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/NLG.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="54" column="47" selection-start-line="54" selection-start-column="47" selection-end-line="54" selection-end-column="47" />
+        <state relative-caret-position="444">
+          <caret line="66" lean-forward="true" selection-start-line="66" selection-end-line="67" />
           <folding>
             <element signature="e#0#13#0" expanded="true" />
           </folding>

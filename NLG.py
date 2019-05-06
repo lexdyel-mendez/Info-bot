@@ -53,13 +53,13 @@ def interface(date):
     startingWords = read.readStarting()
     rule = make_dictionary(words, 1)
     string = makestring(startingWords, rule, 14)
-    if date != ' N/A ':
+    if date.upper() != ' N/A ':                                 #Allows you to input N/A as date to sky it and avoid a status with a date in it.
         if '[date]' not in string:
             interface(date)
         else:
             string = string.replace(' [date] ', str(date))
             print(string)
-    elif date == " N/A ":
+    elif date.upper() == " N/A ":
         if '[date]' in string:
             interface(date)
         else:
