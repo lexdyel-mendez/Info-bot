@@ -58,7 +58,7 @@ def interface(date):
     if '[date]' not in string:
         interface(theDate)
     else:
-        string = string.replace(' [date] ', str(date),1)
+        string = string.replace(' [date] ', str(date))
         print(string)
 
 if __name__ == '__main__':
