@@ -1,24 +1,60 @@
 The date of the event is: N/A
-The name of the event is:To be implemented
-The given string is:today and share with our members to develop leadership between our year . 
+The name of the event is: To be implemented
+The given string is: today and share with our members to develop leadership between our year .
 
 The date of the event is: April 15 
-The name of the event is:To be implemented
-The given string is:today April 15 will be offering high school students further develop leadership and other members of energy 
+The name of the event is: To be implemented
+The given string is: today April 15 will be offering high school students further develop leadership and other members of energy
 
 The date of the event is: April 26 
-The name of the event is:To be implemented
-The given string is:tomorrow is a dinner with your invitation to our next April 26 . 
+The name of the event is: To be implemented
+The given string is: tomorrow is a dinner with your invitation to our next April 26 .
 
-The date of the event is:April 23
-The name of the event is:To be implemented
-The given string is:today April 23 held in different electronic systems .
+The date of the event is: April 23
+The name of the event is: To be implemented
+The given string is: today April 23 held in different electronic systems .
 
 The date of the event is: N/A
 The name of the event is: To be implemented
-The given string is: today engineering programs at uprm and he will have speakers including naima rodr�guez executive director of 
+The given string is: today engineering programs at uprm and he will have speakers including naima rodri 8guez executive director of
 
 The date of the event is: N/A
 The name of the event is: To be implemented
 The given string is:  this opportunity available for cahsi hackathon at uprm . 
+
+The date of the event is: April 26
+The name of the event is: To be implemented
+The given string is:  this saga avengers infinity war with the April 26 at gmis henaac April 26 . 
+
+The date of the event is: None
+The name of the event is: To be implemented
+The given string is: today we would like to congratulate the link and our next None was damaged by sandia national geographic documentary crew about 
+
+The date of the event is: April 26
+The name of the event is: To be implemented
+The given string is: tomorrow is a closed orientation on April 26 . 
+
+The date of the event is: N/A
+The name of the event is: To be implemented
+The given string is: tomorrow we enthusiastically announce the university of the hkn and computer science or counselor via email wie uprm ece at universal 
+
+The date of the event is: N/A
+The name of the event is: To be implemented
+The given string is:  this happen . 
+
+The date of the event is: April 26
+The name of the event is: To be implemented
+The given string is: today April 26 the problem solving . 
+
+The date of the event is: N/A
+The name of the event is: To be implemented
+The given string is: today engineering . 
+
+The date of the event is: April 26
+The name of the event is: To be implemented
+The given string is: today April 26 . 
+
+The date of the event is: April 26
+The name of the event is: To be implemented
+The given string is: tomorrow is collaborating on April 26 during universal time a christmas dinner for the nanogames team presented at college . 
 
