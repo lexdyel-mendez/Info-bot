@@ -146,45 +146,11 @@ def interface(date,eventName):
             stringToOutput = string
             print(string)
     if date.upper() == 'N/A' and eventName.upper() == 'N/A':
-        if all (t in string for t in label):
-            interface(date,eventName)
+        if '[date]' in string or '[event]' in string:
+            interface(date, eventName)
         else:
             stringToOutput = string
             print(string)
-
-
-
-
-    # if eventName.upper() != 'N/A':
-    #     if '[event]' not in string:
-    #         interface(date, eventName)
-    #     if date != 'N/A':
-    #         if '[date]' not in string:
-    #             interface(date)
-    #         else:
-    #             string = string.replace('[date]', str(date))
-    #             stringToOutput = string
-    #             print(string)
-    #     elif date.upper() == "N/A":
-    #         if '[date]' in string:
-    #             interface(date)
-    #         else:
-    #             stringToOutput = string
-    #             print(string)
-    # elif eventName.upper() == 'N/A':
-    #     if date != 'N/A':
-    #         if '[date]' not in string:
-    #             interface(date)
-    #         else:
-    #             string = string.replace('[date]', str(date))
-    #             stringToOutput = string
-    #             print(string)
-    #     elif date.upper() == "N/A":
-    #         if '[date]' in string:
-    #             interface(date)
-    #         else:
-    #             stringToOutput = string
-    #             print(string)
 
 
 
@@ -197,16 +163,14 @@ def label_data(date,eventName,string):
     :return: The labeled string
     '''
     string = string.replace(str(date),'[date]')
-    string = string.replace(str(eventName),'[eventname]')
+    string = string.replace(str(eventName),'[event]')
     return  string
 
 
 if __name__ == '__main__':
     givenDate = input_date()
     eventName = input_event()
-    interface(givenDate,eventName)
-    print(givenDate)
-    print(eventName)
+    interface(givenDate, eventName)
 
     rate = post_rate()
     if rate >= 4:

@@ -76,3 +76,9 @@ The rate of the event is:4
 The given string is: today April 26 harris award for our advisor counselor dr . 
 The labeled data is: today [date] harris award for our advisor counselor dr . 
 
+The date of the event is: April 6
+The name of the event is: conference
+The rate of the event is:4
+The given string is: tomorrow we thank harris corporation sponsored a bachelor’s degree in the ieee and computer society uprm wants to gather with a conference on April 6 the ao drone project and friends . 
+The labeled data is: tomorrow we thank harris corporation sponsored a bachelor’s degree in the ieee and computer society uprm wants to gather with a [eventname] on [date] the ao drone project and friends . 
+
