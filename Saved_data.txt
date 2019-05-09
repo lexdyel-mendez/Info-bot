@@ -130,3 +130,9 @@ The rate of the event is:4
 The given string is: tomorrow is very recognized with the current georgia tech . 
 The labeled data is: tomorrow is very recognized with the current georgia tech . 
 
+The date of the event is: April 26
+The name of the event is: conference
+The rate of the event is: 4
+The given string is: on April 26 conference in engineering presents star program consists of marine and presenting conference at April 26 
+The labeled data is: on [date] [event] in engineering presents star program consists of marine and presenting [event] at [date] 
+
